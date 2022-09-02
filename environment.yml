@@ -1,0 +1,25 @@
+name: catalog-ing
+channels:
+  - conda-forge
+dependencies:
+  - jupyterlab
+  - jupyter_client
+  - nbserverproxy
+  - netcdf4
+  - metpy
+  - numpy
+  - climpred
+  - cfgrib
+  - scipy
+  - xarray
+  - intake=0.6.0
+  - intake-xarray=0.3.1
+  - click
+  - dask
+  - xskillscore
+  - cartopy
+  - matplotlib
+  - tqdm
+  - ipywidgets
+  - aiohttp
+  - pip:
