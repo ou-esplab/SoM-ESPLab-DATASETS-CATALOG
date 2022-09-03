@@ -2,7 +2,7 @@
 
 
 function foo() {
-  python3.6 /home/kpegion/projects/SoM-ESPLab-DATASETS-CATALOG/generate_catalog.py $1 $2 $3 $4
+  python3.6 /home/kpegion/projects/SoM-ESPLab-DATASETS-CATALOG/generate_catalog.py $1 $2 $3 $4 $5
   if [ $? -eq 0 ]
 	then
 	  echo "$2 Success"
@@ -21,6 +21,7 @@ theFile=${line[0]}
 theDataset=${line[1]}
 theParent=${line[2]}
 theTags=${line[3]}
+theConcat=${line[4]}
 
 
 temp_dir=${line[1]}
@@ -29,7 +30,7 @@ pushd ${temp_dir}_temporary
 
 
 
-foo $theFile $theDataset $theParent $theTags
+foo $theFile $theDataset $theParent $theTags $theConcat
 echo "---------------------------------------------------------------------------------------"
 popd
 done < $filename

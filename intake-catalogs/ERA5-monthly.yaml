@@ -1,0 +1,32 @@
+sources:
+  netcdf:
+    args:
+      urlpath: /home/kpegion/data/shared/rean/ERA5/monthly/ERA5_1979-2022.nc
+    description: ''
+    driver: intake_xarray.netcdf.NetCDFSource
+    metadata:
+      Conventions: CF-1.6
+      coords: !!python/tuple
+      - longitude
+      - latitude
+      - time
+      data_vars:
+        U200:
+        - longitude
+        - latitude
+        - time
+        Z200:
+        - longitude
+        - latitude
+        - time
+        Z500:
+        - longitude
+        - latitude
+        - time
+      dims:
+        latitude: 721
+        longitude: 1440
+        time: 516
+      history: '2022-08-30 18:06:02 GMT by grib_to_netcdf-2.25.1: /opt/ecmwf/mars-client/bin/grib_to_netcdf.bin
+        -S param -o /cache/data7/adaptor.mars.internal-1661882746.7348497-21092-1-6af5f7e4-bb8f-401b-8a49-31d470a7338c.nc
+        /cache/tmp/6af5f7e4-bb8f-401b-8a49-31d470a7338c-adaptor.mars.internal-1661882616.0904791-21092-1-tmp.grib'

@@ -12,7 +12,7 @@ import os
 @click.argument('parent_page')
 @click.argument('tags')
 
-def generate_catalog(file_path_name, dataset_sub_name, parent_page, tags):
+def generate_catalog(file_path_name, dataset_sub_name, parent_page, tags, concat_dim=""):
     """
     FILE_NAME: If there are more than one file, FILE_NAME is the pattern for the NetCDF files, otherwise, Name of the NetCDF file. e.g.: 'air.mon.mean.nc' 
 
@@ -28,29 +28,33 @@ def generate_catalog(file_path_name, dataset_sub_name, parent_page, tags):
     print("2 :"+ dataset_sub_name)
     print("3 :"+ parent_page)
     print("4: "+ tags)
+    print("5: "+ concat_dim)
     nfiles = len(glob.glob(file_path_name))
+
     # Set is_combine based on number of files
-    if (nfiles > 1):
+    if (concat_dim!=""):
         is_combine= True
-        print("More than one file###")
     else:
-        print("one file###")
         is_combine= False
 
     temp = dataset_sub_name
 
-    #print("file path name is "+ file_path_name)
+    print("file path name is "+ file_path_name)
 
-    #print("dataset_sub_name is "+ dataset_sub_name)
+    print("dataset_sub_name is "+ dataset_sub_name)
 
-    #print("parent page is " + parent_page)
+    print("parent page is " + parent_page)
+
+    print("concat dim is " + concat_dim)
 
     if int(is_combine) == True:
+
         # Read with xarray
-        source = xr.open_mfdataset(file_path_name,combine='nested',concat_dim='time')
+        source = xr.open_mfdataset(file_path_name,combine='nested',concat_dim=concat_dim)
         src = source
         # Use intake with xarray kwargs
-        source = intake.open_netcdf(file_path_name,concat_dim='time',xarray_kwargs={'combine':'nested','decode_times':True})
+        source = intake.open_netcdf(file_path_name,concat_dim=concat_dim,xarray_kwargs={'combine':'nested','decode_times':True})
+
     else:
         source = intake.open_netcdf(file_path_name)
         src = xr.open_dataset(file_path_name)
@@ -65,7 +69,7 @@ def generate_catalog(file_path_name, dataset_sub_name, parent_page, tags):
 
     # CATALOG_DIR: Github repository containing the master catalog
     # NOTE: It will be more accurate later
-    catalog_dir = "https://raw.githubusercontent.com/kpegion/SoM-ESPLab-DATASETS-CATALOG/gh-pages/intake-catalogs/"
+    catalog_dir = "https://raw.githubusercontent.com/kpegion/SoM-ESPLab-DATASETS-CATALOG/intake-catalogs/"
 
 
     print(type(path))

@@ -1,4 +1,4 @@
-description: COLA Reanalysis Data Catalog
+description: SoM ESPLab Reanalysis Data Catalog
 sources:
   example:
     args:
@@ -8,7 +8,7 @@ sources:
     metadata: {}
   reanalysis_land:
     args:
-      path: '{{CATALOG_DIR}}/reanalysis_land.yaml'
+      path: '{{CATALOG_DIR}}/ERA5.yaml'
     description: ''
     driver: intake.catalog.local.YAMLFileCatalog
     metadata: {}
