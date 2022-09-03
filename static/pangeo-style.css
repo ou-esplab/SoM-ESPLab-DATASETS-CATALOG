@@ -58,8 +58,8 @@ a:hover, a:focus {
 }
 
 .navbar-inverse {
-  background: -webkit-linear-gradient(left, #5eb130, #003B71); /* Chrome10+, Safari5.1+ */
-  background: linear-gradient(left, #5eb130, #003B71);
+  background: -webkit-linear-gradient(left, #ffc9bb, #c61a09); /* Chrome10+, Safari5.1+ */
+  background: linear-gradient(left,#ffc9bb, #c61a09 );
   border: None;
 }
 
