@@ -6,7 +6,7 @@ sources:
     description: ''
     driver: ''
     metadata: {}
-  reanalysis:
+  ERA5-monthly:
     args:
       path: '{{CATALOG_DIR}}/ERA5-monthly.yaml'
     description: ''
