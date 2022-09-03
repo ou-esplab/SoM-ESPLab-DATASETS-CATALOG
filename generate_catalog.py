@@ -69,7 +69,7 @@ def generate_catalog(file_path_name, dataset_sub_name, parent_page, tags, concat
 
     # CATALOG_DIR: Github repository containing the master catalog
     # NOTE: It will be more accurate later
-    catalog_dir = "https://raw.githubusercontent.com/kpegion/SoM-ESPLab-DATASETS-CATALOG/intake-catalogs/"
+    catalog_dir = "https://raw.githubusercontent.com/kpegion/SoM-ESPLab-DATASETS-CATALOG/main/intake-catalogs/"
 
 
     print(type(path))
