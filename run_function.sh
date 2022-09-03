@@ -35,3 +35,4 @@ echo "--------------------------------------------------------------------------
 popd
 done < $filename
 
+# Copy files for correct location and delete temporary data directory

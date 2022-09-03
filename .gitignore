@@ -1,4 +1,5 @@
 __pycache__/
+.ipynb_checkpoints
 .nfs00000000127f91fb00000112
 cpc_assets/cpc-global-tmax.yaml
 cpc_assets/cpc-global-tmin.yaml
