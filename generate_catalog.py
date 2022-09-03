@@ -78,10 +78,11 @@ def generate_catalog(file_path_name, dataset_sub_name, parent_page, tags, concat
     open_catalog = catalog_dir + temp +".yaml"
 
     print("Here is: {0}".format(open_catalog))
+    print("DATASET sub NAME: "+ str(temp))
     try:
         title = src.attrs['title'] 
     except:
-        title = dataset_sub_name
+        title = temp
     try:
         url = src.attrs['References']
     except:
