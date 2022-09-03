@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COLA Main Data Catalog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cosmo/bootstrap.css">
+    <link rel="stylesheet" href="static/pangeo-style.css">
+
+</head>
+<body>
+<div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/COLA-DATASETS-CATALOG/">
+                <span><img src="img/cola.gif"></span>
+                COLA Catalog</a>
+            <span class="navbar-text navbar-version pull-left"><b></b></span>
+        </div>
+        <div class="collapse navbar-collapse nav-collapse">
+            <ul class="nav navbar-nav">
+               <!-- <li><a href="https://medium.com/pangeo" class="__web-inspector-hide-shortcut__">Blog</a></li>
+                <li><a href="https://discourse.pangeo.io">Forum</a></li> -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<main role="main" class="container">
+    <h1>Main</h1>
+    <div>
+        <ol class="breadcrumb">
+
+            <li class="active">main</li>
+
+        </ol>
+    </div>
+    <div class="catalog">
+
+        <h2>COLA Main Data Catalog</h2>
+
+        <h3></h3>
+        <pre><code class="language-python">from intake import open_catalog<br>
+cat = open_catalog("https://raw.githubusercontent.com/kpegion/COLA-DATASETS-CATALOG/gh-pages/intake-catalogs/main.yaml")
+list(cat)</code></pre>
+
+
+        <h3>Child Catalogs</h3>
+        <div class="list-group">
+
+
+            <a href="obs" class="list-group-item">
+                <h4>obs</h4>
+                <p class="description">Observational Datasets</p>
+            </a>
+
+                <a href="model" class="list-group-item">
+                <h4>model</h4>
+                <p class="description">Model Simulations and Experiments Datasets</p>
+            </a>
+  
+             
+            <a href="reanalysis" class="list-group-item">
+                <h4>reanalysis</h4>
+                <p class="description">Reanalysis Datasets</p>
+            </a>
+
+
+                        <a href="analysis" class="list-group-item">
+                <h4>analysis</h4>
+                <p class="description">Analysis Datasets</p>
+            </a>
+  
+
+            <a href="classes" class="list-group-item">
+                <h4>classes</h4>
+                <p class="description">Data used in CLIM classes </p>
+            </a>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+</main>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
