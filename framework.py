@@ -39,9 +39,9 @@ def src_header(title, parent_page, open_catalog, url, tags, catalog_dir):
     <div>
         <ol class="breadcrumb">
 
-            <li><a href="master">master</a></li>
+            <li><a href="main">main</a></li>
 
-            <li><a href="master/{2}">{3}</a></li>
+            <li><a href="main/{2}">{3}</a></li>
 
             <li class="active">{4}</li>
 
