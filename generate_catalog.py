@@ -11,6 +11,7 @@ import os
 @click.argument('dataset_sub_name')
 @click.argument('parent_page')
 @click.argument('tags')
+@click.argument('concat_dim', required=False)
 
 def generate_catalog(file_path_name, dataset_sub_name, parent_page, tags, concat_dim=""):
     """
@@ -21,6 +22,7 @@ def generate_catalog(file_path_name, dataset_sub_name, parent_page, tags, concat
     PARENT_PAGE: Name of the parent directory in the dataset type hierarchy, e.g.: Temperature
 
     TAG: A dataset may need to be catalogued into multiple child catalogs, e.g.: "Atmosphere", "Temperature". Please keep the format consistent
+    CONCAT_DIM: dimension over which to concatenate files.  Optional argumet
     """
     file_path_name = file_path_name.strip('""')
     path, fileName = os.path.split(file_path_name)
@@ -28,7 +30,7 @@ def generate_catalog(file_path_name, dataset_sub_name, parent_page, tags, concat
     print("2 :"+ dataset_sub_name)
     print("3 :"+ parent_page)
     print("4: "+ tags)
-    print("5: "+ concat_dim)
+    #print("5: "+ concat_dim)
     nfiles = len(glob.glob(file_path_name))
 
     # Set is_combine based on number of files
@@ -45,7 +47,7 @@ def generate_catalog(file_path_name, dataset_sub_name, parent_page, tags, concat
 
     print("parent page is " + parent_page)
 
-    print("concat dim is " + concat_dim)
+    #print("concat dim is " + concat_dim)
 
     if int(is_combine) == True:
 

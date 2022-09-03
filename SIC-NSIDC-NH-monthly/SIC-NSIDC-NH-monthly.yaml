@@ -2,7 +2,7 @@ sources:
   netcdf:
     args:
       concat_dim: null
-      urlpath: /home/kpegion/data/shared/rean/ERA5/monthly/ERA5_1979-2022.nc
+      urlpath: /home/kpegion/data/shared/obs/gridded/SIC/NSIDC/monthly/seaice_conc_monthly_nh.nc
       xarray_kwargs:
         combine: nested
         decode_times: true

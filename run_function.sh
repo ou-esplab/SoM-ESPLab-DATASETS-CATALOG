@@ -28,6 +28,7 @@ temp_dir=${line[1]}
 mkdir ${temp_dir}_temporary
 pushd ${temp_dir}_temporary
 
+echo $theFile $theDataset $theParent $theTags $theConcat
 
 
 foo $theFile $theDataset $theParent $theTags $theConcat
