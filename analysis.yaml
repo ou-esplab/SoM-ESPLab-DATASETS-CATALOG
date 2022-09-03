@@ -1,0 +1,10 @@
+description: 'COLA Analysis Data Catalog'
+sources:
+        
+  example:
+    args:
+      path: ''
+    description: ''
+    driver: ''
+    metadata: {}
+    
