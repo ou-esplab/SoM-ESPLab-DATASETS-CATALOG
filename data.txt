@@ -1,1 +1,1 @@
-"/home/kpegion/data/shared/rean/ERA5/monthly/ERA5_1979-2022.nc"	ERA5-monthly	ERA5	gridded,rean,atm,global,monthly
+"/home/kpegion/data/shared/rean/ERA5/monthly/ERA5_1979-2022.nc"	ERA5-monthly	ERA5-monthly	gridded,rean,atm,global,monthly
