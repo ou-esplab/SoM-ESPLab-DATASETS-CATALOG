@@ -6,9 +6,9 @@ sources:
     description: ''
     driver: ''
     metadata: {}
-  reanalysis_land:
+  reanalysis:
     args:
-      path: '{{CATALOG_DIR}}/ERA5.yaml'
+      path: '{{CATALOG_DIR}}/ERA5-monthly.yaml'
     description: ''
     driver: intake.catalog.local.YAMLFileCatalog
     metadata: {}
