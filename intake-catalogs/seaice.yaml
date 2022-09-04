@@ -1,7 +1,7 @@
 description: 'Observational Data Catalog'
 sources:
 
-  SIC-NSIDC-NH-monthly:
+  seaice:
     args:
       path: "{{CATALOG_DIR}}/SIC-NSIDC-NH-monthly.yaml"
     description: 'Sea Ice NSIDC'
