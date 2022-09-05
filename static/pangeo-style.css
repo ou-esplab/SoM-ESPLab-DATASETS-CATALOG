@@ -9,19 +9,19 @@
 */
 
 @font-face {
-    font-family: "Panton Black Caps";
+    font-family: "Panton Black";
     /* src: url("http://ff.cdn.1001fonts.net/p/a/panton.black-caps.otf") */
-    src: url("panton.black-caps.otf");
+    src: url("panton.black-otf");
 }
 
 @font-face {
-    font-family: "Panton Light Caps";
-    src: url("panton.light-caps.otf");
+    font-family: "Panton Light";
+    src: url("panton.light.otf");
 }
 
 h1 {
   color: #003B71;
-  font-family: "Panton Black Caps";
+  font-family: "Panton Black";
   margin-top: 90px;
   margin-bottom: 50px;
 }
@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Panton Light Caps";
+  font-family: "Panton Light";
 }
 
 body {
