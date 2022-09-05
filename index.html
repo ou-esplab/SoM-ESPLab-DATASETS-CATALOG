@@ -38,7 +38,7 @@
 
     <main role="main" class="container">
         <h1>SoM ESPLab Catalog</h1>
-        This website provides information on local datasets available on the SoM computing system.  It is modeled after the <a href="">Pangeo Data Store</a> but it is for local users and is NOT a cloud based data store.  It hosts on <a href="https://github.com/kpegion/SoM-ESPLab-DATASETS-CATALOG">Github</a>:
+        This website provides information on local datasets available on the SoM computing system.  It is modeled after the <a href="https://catalog.pangeo.io/">Pangeo Data Store</a> but it is for local users and is NOT a cloud based data store.  It hosts on <a href="https://github.com/kpegion/SoM-ESPLab-DATASETS-CATALOG">Github</a>:
         <br><br>
         <pre><code class="language-python">from intake import open_catalog<br>
 cat = open_catalog("https://raw.githubusercontent.com/kpegion/SoM-ESPLab-DATASETS-CATALOG/main/intake-catalogs/main.yaml")
@@ -51,9 +51,10 @@ list(cat)</code></pre><br>
 
         <a href="main">Browse the main catalog</a>
         <br><br>
-        <!--     <a href="How_to_create_issue_in_GitHub.mp4">How to report issues</a> -->
+
+        <!--     <a href="How_to_create_issue_in_GitHub.mp4">How to report issues</a> 
         <a href="https://youtu.be/Z-Ocft71uW4">How to report issues</a>
-<!--
+
         <br><br>
         You can search available datasets based on their tags. In order to see which datasets are associated with each
         tag, enter the tag in the search bar below.
