@@ -1,10 +1,10 @@
-description: 'COLA Observational Data Catalog'
+description: 'Observational Data Catalog'
 sources:
 
   ocn:
     args:
       path: "{{CATALOG_DIR}}/ocn.yaml"
-    description: 'COLA Oceanography Dataset Catalog'
+    description: 'Ocean Dataset Catalog'
     driver: intake.catalog.local.YAMLFileCatalog
     metadata: {}
     
@@ -13,7 +13,7 @@ sources:
   land:
     args:
       path: "{{CATALOG_DIR}}/land.yaml"
-    description: 'COLA Land/Hyrdrologial Dataset Catalog'
+    description: 'Land/Hyrdro Dataset Catalog'
     driver: intake.catalog.local.YAMLFileCatalog
     metadata: {}
     
@@ -22,20 +22,20 @@ sources:
   fluxes:
     args:
       path: "{{CATALOG_DIR}}/fluxes.yaml"
-    description: 'COLA Radiation and Atmosphere-Ocean Fluxes Dataset Catalog'
+    description: 'Radiation and Atmosphere-Ocean Fluxes Dataset Catalog'
     driver: intake.catalog.local.YAMLFileCatalog
     metadata: {}
     
   atm:
     args:
       path: "{{CATALOG_DIR}}/atm.yaml"
-    description: 'COLA Atmospheric Science Dataset Catalog'
+    description: 'Atmosphere Dataset Catalog'
     driver: intake.catalog.local.YAMLFileCatalog
     metadata: {}
 
   seaice:
     args:
-      path: "{{CATALOG_DIR}}/seaic.yaml"
+      path: "{{CATALOG_DIR}}/seaice.yaml"
     description: 'Seaice Dataset Catalog'
     driver: intake.catalog.local.YAMLFileCatalog
     metadata: {}

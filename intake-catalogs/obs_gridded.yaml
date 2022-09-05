@@ -1,8 +1,0 @@
-description: COLA OBS_GRIDDED Data catalog
-sources:
-  obs_gridded_land:
-    args:
-      path: '{{CATALOG_DIR}}/obs_gridded_land.yaml'
-    description: ''
-    driver: intake.catalog.local.YAMLFileCatalog
-    metadata: {}
