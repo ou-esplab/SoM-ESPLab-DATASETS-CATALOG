@@ -2,7 +2,7 @@ sources:
   netcdf:
     args:
       concat_dim: null
-      urlpath: /home/kpegion/data/shared/obs/gridded/OCN/SST/monthly/sst.mnmean.nc
+      urlpath: /data/esplab/shared/reanalysis/era5/daily/z200/z.*.nc
       xarray_kwargs:
         combine: nested
         decode_times: true
