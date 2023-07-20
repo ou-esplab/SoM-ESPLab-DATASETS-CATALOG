@@ -1,2 +1,2 @@
-"/data/esplab/shared/reanalysis/era5/daily/z200/z.*.nc"	daily-z200	ERA5	rean,z,daily,gridded
+"/data/esplab/shared/reanalysis/era5/daily/z200/z.*.nc"	ERA5-daily-z200	ERA5-daily	rean,z,daily,gridded
 
