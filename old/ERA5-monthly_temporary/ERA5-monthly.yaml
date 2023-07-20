@@ -1,0 +1,11 @@
+sources:
+  netcdf:
+    args:
+      concat_dim: null
+      urlpath: /home/kpegion/data/shared/rean/ERA5/monthly/ERA5_1979-2022.nc
+      xarray_kwargs:
+        combine: nested
+        decode_times: true
+    description: ''
+    driver: intake_xarray.netcdf.NetCDFSource
+    metadata: {}

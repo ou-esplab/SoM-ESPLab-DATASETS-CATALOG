@@ -1,0 +1,14 @@
+description: SoM ESPLab Reanalysis Data Catalog
+sources:
+  example:
+    args:
+      path: ''
+    description: ''
+    driver: ''
+    metadata: {}
+  ERA5-monthly:
+    args:
+      path: '{{CATALOG_DIR}}/ERA5-monthly.yaml'
+    description: ''
+    driver: intake.catalog.local.YAMLFileCatalog
+    metadata: {}

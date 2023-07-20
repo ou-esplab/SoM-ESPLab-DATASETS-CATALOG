@@ -1,0 +1,14 @@
+description: Observational Data Catalog
+sources:
+  Gridded:
+    args:
+      path: '{{CATALOG_DIR}}/gridded.yaml'
+    description: Observational Dataset Catalog
+    driver: intake.catalog.local.YAMLFileCatalog
+    metadata: {}
+  obs_gridded:
+    args:
+      path: '{{CATALOG_DIR}}/obs_gridded.yaml'
+    description: ''
+    driver: intake.catalog.local.YAMLFileCatalog
+    metadata: {}

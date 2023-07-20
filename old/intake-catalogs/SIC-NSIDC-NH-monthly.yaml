@@ -1,0 +1,11 @@
+sources:
+  netcdf:
+    args:
+      concat_dim: null
+      urlpath: /home/kpegion/data/shared/obs/gridded/SIC/NSIDC/monthly/seaice_conc_monthly_nh.nc
+      xarray_kwargs:
+        combine: nested
+        decode_times: true
+    description: ''
+    driver: intake_xarray.netcdf.NetCDFSource
+    metadata: {}

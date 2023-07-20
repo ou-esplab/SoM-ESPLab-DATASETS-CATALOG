@@ -1,0 +1,11 @@
+sources:
+  netcdf:
+    args:
+      concat_dim: "time\r"
+      urlpath: /share/deluge/reanalysis/REANALYSIS/ERA5/2D/daily/precip/precip.*.nc
+      xarray_kwargs:
+        combine: nested
+        decode_times: true
+    description: ''
+    driver: intake_xarray.netcdf.NetCDFSource
+    metadata: {}

@@ -24,6 +24,13 @@ def generate_catalog(file_path_name, dataset_sub_name, parent_page, tags, concat
     TAG: A dataset may need to be catalogued into multiple child catalogs, e.g.: "Atmosphere", "Temperature". Please keep the format consistent
     CONCAT_DIM: dimension over which to concatenate files.  Optional argumet
     """
+
+    # Get rid of warnings about large chunks
+    # Eliminate Warnings
+    import warnings
+    warnings.filterwarnings("ignore")
+
+
     file_path_name = file_path_name.strip('""')
     path, fileName = os.path.split(file_path_name)
     print("1 :"+ file_path_name)

@@ -1,3 +1,2 @@
-"/home/kpegion/data/shared/rean/ERA5/monthly/ERA5_1979-2022.nc"	ERA5-monthly	reanalysis	gridded,rean,atm,global,monthly
-"/home/kpegion/data/shared/obs/gridded/SIC/NSIDC/monthly/seaice_conc_monthly_nh.nc"	SIC-NSIDC-NH-monthly gridded	gridded,obs,seaice,monthly
-"/home/kpegion/data/shared/obs/gridded/OCN/SST/monthly/sst.mnmean.nc"	OISST-monthly	sst	gridded,ocn,global,monthly,sst
+"/data/esplab/shared/reanalysis/era5/daily/z200/z.*.nc"	daily-z200	ERA5	rean,z,daily,gridded
+
