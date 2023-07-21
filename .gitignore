@@ -1,4 +1,8 @@
 old/
+*.old
+src/__pycache__/
+src/save/
+src/.ipynb_checkpoints
 __pycache__/
 .ipynb_checkpoints
 .nfs00000000127f91fb00000112
