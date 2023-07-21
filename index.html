@@ -1,52 +1,19 @@
-
-<!DOCTYPE html>
+---
+---
 <html>
-<head>
-    <title>Main Data Catalog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cosmo/bootstrap.css">
-    <link rel="stylesheet" href="static/pangeo-style.css">
 
-</head>
-<body>
-<div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/SoM-ESPLab-DATASETS-CATALOG/">
-                <span><img src=""></span>
-                SoM ESPLab Catalog</a>
-            <span class="navbar-text navbar-version pull-left"><b></b></span>
-        </div>
-        <div class="collapse navbar-collapse nav-collapse">
-            <ul class="nav navbar-nav">
-            </ul>
-        </div>
-    </div>
-</div>
+        {% include header.html %}
 
+        <body>
+                {% include navbar.html %}
 
-<main role="main" class="container">
-    <h1>Main</h1>
-    <div>
-        <ol class="breadcrumb">
-
-            <li class="active">main</li>
-
-        </ol>
-    </div>
-    <div class="catalog">
+        </body>
 
         <h2>Main Data Catalog</h2>
 
         <h3></h3>
         <pre><code class="language-python">from intake import open_catalog<br>
-cat = open_catalog("https://raw.githubusercontent.com/kpegion/SoM-ESPLab-DATASETS-CATALOG/intake-catalogs/main.yaml")
+cat = open_catalog("https://raw.githubusercontent.com/ou-esplab/SoM-ESPLab-DATASETS-CATALOG/intake-catalogs/main.yaml")
 list(cat)</code></pre>
 
 
@@ -87,9 +54,7 @@ list(cat)</code></pre>
 
 </main>
 
-
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
+        {% include footer.html %}
 </html>
+
+
