@@ -26,7 +26,6 @@ def src_header(title, parent_page, open_catalog, url, tags, catalog_dir):
         </div>
         <div class="collapse navbar-collapse nav-collapse">
             <ul class="nav navbar-nav">
-              <!--  <li><a href="https://medium.com/pangeo">Blog</a></li>
                 <li><a href="https://discourse.pangeo.io">Forum</a></li> -->
             </ul>
         </div>
