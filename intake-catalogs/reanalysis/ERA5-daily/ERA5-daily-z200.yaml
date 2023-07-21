@@ -1,7 +1,7 @@
 sources:
   netcdf:
     args:
-      concat_dim: null
+      concat_dim: ''
       urlpath: /data/esplab/shared/reanalysis/era5/daily/z200/z.*.nc
       xarray_kwargs:
         combine: nested

@@ -1,0 +1,11 @@
+sources:
+  netcdf:
+    args:
+      concat_dim: ''
+      urlpath: /data/esplab/shared/reanalysis/era5/daily/z850/z.*.nc
+      xarray_kwargs:
+        combine: nested
+        decode_times: true
+    description: ''
+    driver: intake_xarray.netcdf.NetCDFSource
+    metadata: {}
