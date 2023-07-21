@@ -12,33 +12,11 @@ title: Main Catalog
         <h3>Sub-Catalogs</h3>
         <div class="list-group">
 
-
-            <a href="obs.html" class="list-group-item">
-                <h4>Observations</h4>
-                <p class="description">Observational Datasets</p>
-            </a>
-
-                <a href="model.html" class="list-group-item">
-                <h4>model</h4>
-                <p class="description">Model Simulations and Experiments Datasets</p>
-            </a>
-  
-             
-            <a href="reanalysis.html" class="list-group-item">
-                <h4>reanalysis</h4>
-                <p class="description">Reanalysis Datasets</p>
-            </a>
-
-
-            <a href="analysis.html" class="list-group-item">
-                <h4>analysis</h4>
-                <p class="description">Analysis Datasets</p>
-            </a>
-  
-
-            <a href="classes" class="list-group-item">
-                <h4>classes.html</h4>
-                <p class="description">Data used in classes </p>
+        {% for l in site.toplevel %}
+        
+            <a href="{{l.name}}" class="list-group-item">
+	    <h4>{{l.name}}</h4>
+	    <p class="description">{{l.description}}</p>
             </a>
 
         </div>

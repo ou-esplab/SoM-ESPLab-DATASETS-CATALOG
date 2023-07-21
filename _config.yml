@@ -17,6 +17,7 @@ theme: minima
 plugins:
   - jekyll-feed
 loading: "Load in Python"
+collections_dir: my_collections
 
 # Variables and Layout Settings
 
@@ -30,31 +31,8 @@ collections:
     permalink: /:path/index.html
   obs:
     output: true
-    sub_dirs: [gridded,station,indices]
     permalink: /:path/index.html
   model:
-    output: true
-    permalink: /:path/index.html
-    sub_dirs: [initialized,uninitialized]
-  analysis:
-    output: true
-    permalink: /:path/index.html
-  initialized:
-    output: true
-    permalink: /:path/index.html
-    sub_dirs: [subx,nmme]
-  subx:
-    output: true
-    permalink: /:path/index.html
-    sub_dirs: [forecasts,hindcasts]
-  nmme:
-    output: true
-    permalink: /:path/index.html
-    sub_dirs: [forecasts,hindcasts]
-  forecasts:
-    output: true
-    permalink: /:path/index.html
-  hindcasts:
     output: true
     permalink: /:path/index.html
     
