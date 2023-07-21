@@ -1,20 +1,12 @@
 ---
+layout: default
+title: Main Data Catalog
 ---
-<html>
-
-        {% include header.html %}
-
-        <body>
-                {% include navbar.html %}
-
-        </body>
 
         <h2>Main Data Catalog</h2>
 
         <h3></h3>
-        <pre><code class="language-python">from intake import open_catalog<br>
-cat = open_catalog("https://raw.githubusercontent.com/ou-esplab/SoM-ESPLab-DATASETS-CATALOG/intake-catalogs/main.yaml")
-list(cat)</code></pre>
+        <pre><code class="language-python">from intake import open_catalog</code></pre>
 
 
         <h3>Sub-Catalogs</h3>
@@ -54,7 +46,5 @@ list(cat)</code></pre>
 
 </main>
 
-        {% include footer.html %}
-</html>
 
 
