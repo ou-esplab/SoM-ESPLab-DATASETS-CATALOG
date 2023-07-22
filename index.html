@@ -12,8 +12,10 @@ title: Main Catalog
         <div class="list-group">
 
         {% for sub_cats in site.sub_catalogs %}
+            <p>{{ site.baseurl }}{{ sub_cats.url }}</p>
+	    <br>
 
-            <a href="{{ sub_cats.url | relative_url }}" class="list-group-item">
+            <a href="{{ site.baseurl }}{{ sub_cats.url }}" class="list-group-item">
 	        <h4>{{ sub_cats.name }}</h4>
 	        <p class="description">{{ sub_cats.description }}</p>
             </a>
