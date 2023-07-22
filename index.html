@@ -12,11 +12,10 @@ title: Main Catalog
         <h3>Sub-Catalogs</h3>
 
 	Listing subcatalogs
+        {{site.toplevel}}
 
         <div class="list-group">
 
-        {{l.name}}
-	
         {% for l in site.toplevel %}
             {{l.name}}
 
