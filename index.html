@@ -5,38 +5,30 @@ title: Main Catalog
 
  The following people are members of our research team:
  {% for sub_cats in site.sub_catalogs %}
- Name: {{ sub_cats.name }}
- Role: {{ sub_cats.description }}
+ <p> Name: {{ sub_cats.name }} </p>
+ <p> Description: {{ sub_cats.description }} </p>
  {% endfor %}
 
-<!--        <h2>Main Catalog</h2>
+        <h2>Main Catalog</h2>
 
         <h3></h3>
         <pre><code class="language-python">from intake import open_catalog</code></pre>
 
-
         <h3>Sub-Catalogs</h3>
-
-	Listing subcatalogs
-        {{site.toplevel}}
 
         <div class="list-group">
 
-        {% for catalog in site.toplevel %}
-            {{catalog.name}}
+        {% for sub_cats in site.sub_catalogs %}
 
-
-            <a href="{{l.name}}" class="list-group-item">
-	        <h4>{{l.name}}</h4>
-	        <p class="description">{{l.description}}</p>
+            <a href="{{ sub_cats.name }}" class="list-group-item">
+	        <h4>{{ sub_cats.name }}</h4>
+	        <p class="description">{{ sub_cats.description }}</p>
             </a>
 
          {% endfor %}
-        </div>
-    </div>
 
-</main>
---!>
+        </div>
+
 
 
 
