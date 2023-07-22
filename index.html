@@ -3,9 +3,10 @@ layout: default
 title: Main Catalog
 ---
 
-
-{% for catalog in site.toplevel %}
-<p>{{catalog.name}}</p>
+ The following people are members of our research team:
+ {% for team_member in site.team_members %}
+ - {{ team_member.name }}, role: {{ team_member.role }}
+ {% endfor %}
 
 <!--        <h2>Main Catalog</h2>
 
