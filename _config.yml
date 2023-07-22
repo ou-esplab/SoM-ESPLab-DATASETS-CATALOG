@@ -23,16 +23,17 @@ plugins:
 #defaults:
 #  - scope:
 #      path: "assets"
-team_members:
+sub_catalogs:
   -
     name: "Reanalysis"
     role: "project lead"
-    start_date: "2016-02-01"
   -
     name: "Observations"
     role: maintainer
-    start_date: "2018-03-15"
   -
     name: "Models"
     role: editor
     start_date: "2017-12-01"
+  -
+    name: "Classes"
+    role: editor
