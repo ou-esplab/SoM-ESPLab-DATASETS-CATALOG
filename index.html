@@ -3,7 +3,11 @@ layout: default
 title: Main Catalog
 ---
 
-        <h2>Main Catalog</h2>
+
+{% for catalog in site.toplevel %}
+<p>{{catalog.name}}</p>
+
+<!--        <h2>Main Catalog</h2>
 
         <h3></h3>
         <pre><code class="language-python">from intake import open_catalog</code></pre>
@@ -16,8 +20,8 @@ title: Main Catalog
 
         <div class="list-group">
 
-        {% for l in site.toplevel %}
-            {{l.name}}
+        {% for catalog in site.toplevel %}
+            {{catalog.name}}
 
 
             <a href="{{l.name}}" class="list-group-item">
@@ -30,6 +34,7 @@ title: Main Catalog
     </div>
 
 </main>
+--!>
 
 
 
