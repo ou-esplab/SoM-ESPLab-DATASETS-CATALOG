@@ -24,16 +24,13 @@ plugins:
 #  - scope:
 #      path: "assets"
 
-team_members:
+sub_catalogs:
   -
-    name: "Sarah Becker"
-    role: "project lead"
-    start_date: "2016-02-01"
+    name: "reanalysis"
+    description: "Reanalysis Datasets"
   -
-    name: "Jane Smith"
-    role: maintainer
-    start_date: "2018-03-15"
+    name: "obs"
+    description: "Observational Datasets" 
   -
-    name: "Albert Hamilton"
-    role: editor
-    start_date: "2017-12-01"
+    name: "model"
+    description: "Model Simulations and Initialized Predictions"
