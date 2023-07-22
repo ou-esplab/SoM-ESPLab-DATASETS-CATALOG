@@ -26,14 +26,13 @@ plugins:
 sub_catalogs:
   -
     name: "Reanalysis"
-    role: "project lead"
+    description: "Reanalysis and Analysis Datasets"
   -
     name: "Observations"
-    role: maintainer
+    description: "Observational Datasets"
   -
     name: "Models"
-    role: editor
-    start_date: "2017-12-01"
+    description: "Model Simulations and Initialized Prediction Datasets"
   -
     name: "Classes"
-    role: editor
+    description: "Datasets used for Classes"
