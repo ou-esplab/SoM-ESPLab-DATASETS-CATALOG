@@ -3,17 +3,31 @@ layout: default
 title: Main Catalog
 ---
 
-        <h2>Main Catalog</h2>
+        <h1>SoM ESPLab Catalog</h1>
 
-        <pre><code class="language-python">from intake import open_catalog</code></pre>
+        This website provides information on local datasets available on the Earth System Prediction Lab shared data disks. 
+	It is modeled after the <a href="https://catalog.pangeo.io/">Pangeo Data Store</a> 
+	but it is for local users and is NOT a cloud based data store. 
+	It hosts on <a href="https://github.com/kpegion/SoM-ESPLab-DATASETS-CATALOG">Github</a>:
+
+        <br><br>
+        <pre><code class="language-python">from intake import open_catalog<br>
+              cat = open_catalog("{{ site.url }}/intake-catalogs/main.yaml")
+              list(cat)</code>
+	</pre>
+	<br>
+
+        Most of the datasets available are meant to be opened with <a href="http://xarray.pydata.org/">xarray</a>.
+        Though there is no standard catalog format, our catalogs currently rely upon 
+        <a href="https://intake.readthedocs.io/">Intake</a> and 
+	<a href="https://github.com/intake/intake-xarray">Intake-xarray</a>.
+	<br><br>
 
         <h3>Sub-Catalogs</h3>
 
         <div class="list-group">
 
         {% for sub_cats in site.sub_catalogs %}
-            <p>{{ site.baseurl }}{{ sub_cats.name }}</p>
-	    <br>
 
 	    <a href="{{ site.baseurl }}/{{ sub_cats.name  | downcase }}" class="list-group-item">
 	        <h4>{{ sub_cats.name }}</h4>
