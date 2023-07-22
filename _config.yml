@@ -23,14 +23,16 @@ plugins:
 #defaults:
 #  - scope:
 #      path: "assets"
-
-sub_catalogs:
+team_members:
   -
-    name: "reanalysis"
-    description: "Reanalysis Datasets"
+    name: "Reanalysis"
+    role: "project lead"
+    start_date: "2016-02-01"
   -
-    name: "obs"
-    description: "Observational Datasets" 
+    name: "Observations"
+    role: maintainer
+    start_date: "2018-03-15"
   -
-    name: "model"
-    description: "Model Simulations and Initialized Predictions"
+    name: "Models"
+    role: editor
+    start_date: "2017-12-01"

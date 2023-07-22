@@ -4,9 +4,8 @@ title: Main Catalog
 ---
 
  The following people are members of our research team:
- {% for catalog in site.sub_catalog %}
- {{ catalog.name }}
- {{ catalog.description }}
+ {% for team_member in site.team_members %}
+ - {{ team_member.name }}, role: {{ team_member.role }}
  {% endfor %}
 
 <!--        <h2>Main Catalog</h2>
