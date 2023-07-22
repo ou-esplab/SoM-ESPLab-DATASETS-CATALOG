@@ -27,12 +27,11 @@ defaults:
 collections:
   reanalysis:
     output: true
-    permalink: /:path/index.html
-  obs:
-    output: true
-    permalink: /:path/index.html
   model:
     output: true
-    permalink: /:path/index.html
+  obs:
+    output: true
+  classes:
+    output: true
     
 
