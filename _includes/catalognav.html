@@ -1,8 +1,8 @@
 <ul>
-  {% for item in include.nav %}
+  {% for item in include.catalognav %}
     <li><a href="{{ item.url }}">{{ item.title }}</a>
-      {% if item.subnav %}
-        {% include nav.html nav=item.subnav %}
+      {% if item.subfolder %}
+        {% include catalognav.html catalognav=item.subfolder %}
       {% endif %}
     </li>
   {% endfor %}

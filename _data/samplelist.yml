@@ -1,4 +1,4 @@
-data_catalogs:
+catalognav:
   - title: Reanalysis
     subfolder:
       - page: 'ERA5'
