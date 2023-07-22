@@ -1,25 +1,47 @@
-toc:
-  - title: Group 1
-    subfolderitems:
-      - page: Thing 1
-        url: /thing1.html
-      - page: Thing 2
-        url: /thing2.html
-      - page: Thing 3
-        url: /thing3.html
-  - title: Group 2
-    subfolderitems:
-      - page: Piece 1
-        url: /piece1.html
-      - page: Piece 2
-        url: /piece2.html
-      - page: Piece 3
-        url: /piece3.html
-  - title: Group 3
-    subfolderitems:
-      - page: Widget 1
-        url: /widget1.html
-      - page: Widget 2
-        url: /widget2.html
-      - page: Widget 3
-        url: /widget3.html
+data_catalogs:
+  - title: Reanalysis
+    subfolder:
+      - page: 'ERA5'
+        url: /ERA5.html
+      - page: 'ERA5-land'
+        url: /ERA5-land.html
+  - title: Models
+    subfolder:
+      - page: initialized
+        url: /initialized.html
+        subfolder:
+            - page: subx
+              url: /subx.html
+              subfolder:
+              - page: hindcasts
+                url: /hindcasts.html
+              - page: forecasts
+                url: /forecasts.html
+            - page: nmme 
+              url: /nmme.html
+              subfolder:
+              - page: hindcasts
+                url: /hindcasts.html
+              - page: forecasts
+                url: /forecasts.html
+      - page: uninitialized
+        url: /uninitialized.html
+        subfolder:
+            - page: CMIP5
+              url: /cmip5.html
+            - page: CMIP6
+              url: /cmip6.html
+  - title: Observations
+    subfolder:
+      - page: Gridded
+        url: /gridded.html
+      - page: Station
+        url: /Station.html
+      - page: Indices
+        url: /indices.html
+      - page: 'Event Databases'
+        url: /events.html
+ - title: classes
+    subfolder:
+      - page: METR3334
+        url: /metr3334.html

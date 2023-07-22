@@ -11,15 +11,7 @@ title: testnav
 
         <h1>SoM ESPLab Catalog</h1>
 
-        {% for item in site.data.samplelist.toc %}
-            <h3>{{ item.title }}</h3>
-            <ul>
-                {% for entry in item.subfolderitems %}
-                    <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
-                {% endfor %}
-            </ul>
-       {% endfor %}
-
+         {% include catalognav.html %}
 
        {% include footer.html %}
    </body>
