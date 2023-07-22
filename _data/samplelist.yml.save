@@ -9,8 +9,28 @@ catalognav:
     subfolder:
       - page: initialized
         url: /initialized.html
+        subfolder:
+            - page: subx
+              url: /subx.html
+              subfolder:
+              - page: hindcasts
+                url: /hindcasts.html
+              - page: forecasts
+                url: /forecasts.html
+            - page: nmme 
+              url: /nmme.html
+              subfolder:
+              - page: hindcasts
+                url: /hindcasts.html
+              - page: forecasts
+                url: /forecasts.html
       - page: uninitialized
         url: /uninitialized.html
+        subfolder:
+            - page: CMIP5
+              url: /cmip5.html
+            - page: CMIP6
+              url: /cmip6.html
   - title: Observations
     subfolder:
       - page: Gridded
