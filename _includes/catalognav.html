@@ -1,9 +1,0 @@
-<ul>
-  {% for item in include.catalognav %}
-    <li><a href="{{ item.url }}">{{ item.title }}</a>
-      {% if item.subfolder %}
-        {% include catalognav.html catalognav=item.subfolder %}
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>

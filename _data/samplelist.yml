@@ -1,27 +1,11 @@
-catalognav:
-  - title: Reanalysis
-    subfolder:
-      - page: 'ERA5'
-        url: /ERA5.html
-      - page: 'ERA5-land'
-        url: /ERA5-land.html
-  - title: Models
-    subfolder:
-      - page: initialized
-        url: /initialized.html
-      - page: uninitialized
-        url: /uninitialized.html
-  - title: Observations
-    subfolder:
-      - page: Gridded
-        url: /gridded.html
-      - page: Station
-        url: /Station.html
-      - page: Indices
-        url: /indices.html
-      - page: 'Event Databases'
-        url: /events.html
- - title: classes
-    subfolder:
-      - page: METR3334
-        url: /metr3334.html
+nav:
+  - title: Deployment
+    url: deployment.html
+    subnav:
+      - title: Heroku
+        url: heroku.html
+        subnav:
+          - title: Jekyll on Heroku
+            url: jekyll-on-heroku.html
+  - title: Help
+    url: help.html
