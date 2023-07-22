@@ -10,14 +10,22 @@ title: Main Catalog
 
 
         <h3>Sub-Catalogs</h3>
+
+	Listing subcatalogs
+
         <div class="list-group">
 
+        {{l.name}}
+	
         {% for l in site.toplevel %}
-        
+            {{l.name}}
+
+
             <a href="{{l.name}}" class="list-group-item">
-	    <h4>{{l.name}}</h4>
-	    <p class="description">{{l.description}}</p>
+	        <h4>{{l.name}}</h4>
+	        <p class="description">{{l.description}}</p>
             </a>
+
          {% endfor %}
         </div>
     </div>
