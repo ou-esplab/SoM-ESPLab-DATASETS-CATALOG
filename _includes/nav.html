@@ -1,7 +1,10 @@
 <ul>
   {% for item in include.nav %}
+  include.nav
     <li><a href="{{ item.url }}">{{ item.title }}</a>
+    item.subnav
       {% if item.subnav %}
+        item.subnav
         {% include nav.html nav=item.subnav %}
       {% endif %}
     </li>
