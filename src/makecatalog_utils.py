@@ -24,11 +24,6 @@ def src_header(title, parent_page, open_catalog, url, tags, catalog_dir):
                 ESPLab Catalog</a>
             <span class="navbar-text navbar-version pull-left"><b></b></span>
         </div>
-        <div class="collapse navbar-collapse nav-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="https://discourse.pangeo.io">Forum</a></li> -->
-            </ul>
-        </div>
     </div>
 </div>
 
